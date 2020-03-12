@@ -2,16 +2,16 @@ var sacha = {
   nombre: 'Sacha',
   apellido: 'Lifszyc',
   edad: 28,
-  ingeniero: false,
+  ingeniero: true,
   cocinero: false,
-  cantante: true,
+  cantante: false,
   dj: false,
   guitarrista: false,
-  drone: false
+  drone: true
 }
 
 function imprimirProfesiones(persona) {
-  console.log(`${persona.nombre} es:`)
+  console.log(`${persona.nombre} es:`) //template string
 
   if (persona.ingeniero) {
     console.log('Ingeniero')
@@ -42,3 +42,11 @@ function imprimirProfesiones(persona) {
 }
 
 imprimirProfesiones(sacha)
+
+function imprimirSiEsMayorDeEdad(persona) {
+  if(persona.edad > 18){
+    console.log(`${nombre} es mayor de edad`)
+  } else {
+    console.log(`${nombre} es menor de edad`)
+  }
+}
